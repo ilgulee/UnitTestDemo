@@ -12,16 +12,16 @@ namespace UnitTestDemo.Fundamentals
 
         public bool CanBeCancelledBy(User user)
         {
-            if (user.IsAdmin)
-            {
-                return true;
-            }
-            //return (user.IsAdmin || MadeBy == user);
-            if (MadeBy == user)
-            {
-                return true;
-            }
-            return false;
+            //if (user.IsAdmin)
+            //{
+            //    return true;
+            //}
+            return (user.IsAdmin || MadeBy == user);
+            //if (MadeBy == user)
+            //{
+            //    return true;
+            //}
+            //return false;
         }
     }
 
